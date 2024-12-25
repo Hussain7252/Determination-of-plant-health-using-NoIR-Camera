@@ -7,10 +7,14 @@
 
 
 # Folder Content:
-1. `src/NDVI_Codes` : Our code for No-IR Camera and Raspberry Pi for detecting plant health: `ImageNDVI.py`: For Reading Single Image and Calculating NDVI Index ,`VideoNDVI.py`: FOr Reading Live VIdeo from camera and calculating NDVI index and `fastiecm.py`: For creating a colourmap for NDVI Scale.
-2. `results/SLAM_Video` : Video of implementation of ORBSLAM3 on Stereo Camera.
-3. `results/NDVI_Image_Data`: Images of sample NDVI converted images of different environments.
-4. `report/Team_INFRA.pptx`: PPT of the First Presentation
+1. src/SLAM_Codes/ORB_SLAM3: Official Repository of ORB_SLAM3 with edited changes from our side related to stereo_inertial.cc and stereo.cc files in Examples_Old/ROS/ORB_SLAM3/src
+2. src/SLAM_Codes/depthai: Library package required for our Luxonis OakD Lite Stereo Camera
+3. src/SLAM_Codes/ROS_Driver/imu_driver: Our Driver for getting IMU data published on the ORBSLAM3 imu topic. To run the code run the launch file and use the port address as input.
+4. src/SLAM_Codes/ROS_Driver/camera_driver: Our driver for getting images from Stereo camera gettng published to /camera/left/image_raw and /camera/right/image_raw. To run just connect the camera and run the ROS launch file.
+5. src/NDVI_Codes : Our code for No-IR Camera and Raspberry Pi for detecting plant health: ImageNDVI.py: For Reading Single Image and Calculating NDVI Index ,VideoNDVI.py: FOr Reading Live VIdeo from camera and calculating NDVI index and fastiecm.py: For creating a colourmap for NDVI Scale.
+6. results/SLAM_Video : Video of implementation of ORBSLAM3 on Stereo Camera.
+7. results/NDVI_Image_Data: Images of sample NDVI converted images of different environments.
+8. report/Team_INFRA.pptx: PPT of the First Presentation
 
 ### REFERENCES:
 
